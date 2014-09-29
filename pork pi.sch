@@ -2206,6 +2206,18 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="C8" gate="G$1" x="243.84" y="168.91" rot="MR0"/>
 <instance part="GND12" gate="1" x="232.41" y="161.29"/>
 <instance part="GND13" gate="1" x="243.84" y="161.29"/>
+<instance part="U1" gate="C" x="241.3" y="138.43"/>
+<instance part="U1" gate="D" x="298.45" y="168.91"/>
+<instance part="U1" gate="G$4" x="304.8" y="96.52"/>
+<instance part="U1" gate="G" x="165.1" y="160.02"/>
+<instance part="U1" gate="H" x="381" y="128.27"/>
+<instance part="U1" gate="E" x="363.22" y="185.42"/>
+<instance part="U1" gate="L" x="163.83" y="171.45"/>
+<instance part="U1" gate="K" x="40.64" y="153.67"/>
+<instance part="U1" gate="F" x="356.87" y="114.3"/>
+<instance part="U1" gate="J" x="345.44" y="149.86"/>
+<instance part="U1" gate="N" x="337.82" y="121.92"/>
+<instance part="U1" gate="M" x="354.33" y="133.35"/>
 </instances>
 <busses>
 </busses>
@@ -2473,6 +2485,34 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="243.84" y1="176.53" x2="232.41" y2="176.53" width="0.1524" layer="91"/>
 <wire x1="232.41" y1="176.53" x2="232.41" y2="173.99" width="0.1524" layer="91"/>
 <junction x="243.84" y="176.53"/>
+</segment>
+</net>
+<net name="ETH_CS" class="0">
+<segment>
+<pinref part="U1" gate="C" pin="CSI_PCLK/SPI2_CS0/EINT14"/>
+<wire x1="220.98" y1="152.4" x2="218.44" y2="152.4" width="0.1524" layer="91"/>
+<label x="218.44" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ETH_CLK" class="0">
+<segment>
+<pinref part="U1" gate="C" pin="CSI_MCLK/SPI2_CLK/EINT15"/>
+<wire x1="220.98" y1="149.86" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
+<label x="218.44" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ETH_MOSI" class="0">
+<segment>
+<pinref part="U1" gate="C" pin="CSI_HSYNC/SPI2_MOSI"/>
+<wire x1="220.98" y1="147.32" x2="218.44" y2="147.32" width="0.1524" layer="91"/>
+<label x="218.44" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="ETH_MISO" class="0">
+<segment>
+<pinref part="U1" gate="C" pin="CSI_VSYNC/SPI2_MISO"/>
+<wire x1="220.98" y1="144.78" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
+<label x="218.44" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
