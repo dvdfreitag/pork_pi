@@ -41,3 +41,16 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#############
+## Eagle
+#############
+
+# Schematic history
+*.s\#*
+
+# Board history
+*.s\#*
+
+# Eagle configuration
+*.epf
