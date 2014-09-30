@@ -946,7 +946,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <gate name="B" symbol="A13-AUDIO" x="0" y="-20.32"/>
 <gate name="C" symbol="A13-CSI" x="-2.54" y="-48.26"/>
 <gate name="D" symbol="A13-DDR3" x="-2.54" y="-106.68"/>
-<gate name="G$4" symbol="A13-GPIO" x="-2.54" y="-175.26"/>
+<gate name="I" symbol="A13-GPIO" x="-2.54" y="-175.26"/>
 <gate name="G" symbol="A13-I2C" x="38.1" y="-127"/>
 <gate name="H" symbol="A13-LCD" x="60.96" y="-149.86"/>
 <gate name="E" symbol="A13-NAND" x="66.04" y="-88.9"/>
@@ -1053,25 +1053,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="F" pin="TPY2" pad="88"/>
 <connect gate="G" pin="TWI0_SCK" pad="101"/>
 <connect gate="G" pin="TWI0_SDA" pad="102"/>
-<connect gate="G$4" pin="DZQ" pad="17"/>
-<connect gate="G$4" pin="PB10/EINT24" pad="10"/>
-<connect gate="G$4" pin="PB15" pad="105"/>
-<connect gate="G$4" pin="PB16" pad="106"/>
-<connect gate="G$4" pin="PB17" pad="161"/>
-<connect gate="G$4" pin="PB18" pad="160"/>
-<connect gate="G$4" pin="PB2/EINT16" pad="103"/>
-<connect gate="G$4" pin="PB3/EINT17" pad="150"/>
-<connect gate="G$4" pin="PB4/EINT18" pad="104"/>
-<connect gate="G$4" pin="PG0/EINT0" pad="155"/>
-<connect gate="G$4" pin="PG1/EINT1" pad="154"/>
-<connect gate="G$4" pin="PG10/SPI1_CLK/UART3_RX/EINT10" pad="13"/>
-<connect gate="G$4" pin="PG11/SPI1_MOSI/UART3_CTS/EINT11" pad="14"/>
-<connect gate="G$4" pin="PG12/SPI1_MISO/UART3_RTS/EINT12" pad="15"/>
-<connect gate="G$4" pin="PG2/EINT2" pad="153"/>
-<connect gate="G$4" pin="PG3/UART1_TX/EINT3" pad="152"/>
-<connect gate="G$4" pin="PG4/UART1_RX/EINT4" pad="151"/>
-<connect gate="G$4" pin="PG9/SPI1_CS0/UART3_TX/EINT9" pad="12"/>
-<connect gate="G$4" pin="SVREF" pad="18"/>
 <connect gate="H" pin="LCD_CLK" pad="129"/>
 <connect gate="H" pin="LCD_D10" pad="141"/>
 <connect gate="H" pin="LCD_D11" pad="140"/>
@@ -1094,6 +1075,25 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="H" pin="LCD_DE" pad="128"/>
 <connect gate="H" pin="LCD_HSYNC" pad="127"/>
 <connect gate="H" pin="LCD_VSYNC" pad="126"/>
+<connect gate="I" pin="DZQ" pad="17"/>
+<connect gate="I" pin="PB10/EINT24" pad="10"/>
+<connect gate="I" pin="PB15" pad="105"/>
+<connect gate="I" pin="PB16" pad="106"/>
+<connect gate="I" pin="PB17" pad="161"/>
+<connect gate="I" pin="PB18" pad="160"/>
+<connect gate="I" pin="PB2/EINT16" pad="103"/>
+<connect gate="I" pin="PB3/EINT17" pad="150"/>
+<connect gate="I" pin="PB4/EINT18" pad="104"/>
+<connect gate="I" pin="PG0/EINT0" pad="155"/>
+<connect gate="I" pin="PG1/EINT1" pad="154"/>
+<connect gate="I" pin="PG10/SPI1_CLK/UART3_RX/EINT10" pad="13"/>
+<connect gate="I" pin="PG11/SPI1_MOSI/UART3_CTS/EINT11" pad="14"/>
+<connect gate="I" pin="PG12/SPI1_MISO/UART3_RTS/EINT12" pad="15"/>
+<connect gate="I" pin="PG2/EINT2" pad="153"/>
+<connect gate="I" pin="PG3/UART1_TX/EINT3" pad="152"/>
+<connect gate="I" pin="PG4/UART1_RX/EINT4" pad="151"/>
+<connect gate="I" pin="PG9/SPI1_CS0/UART3_TX/EINT9" pad="12"/>
+<connect gate="I" pin="SVREF" pad="18"/>
 <connect gate="J" pin="SDC0_CLK" pad="110"/>
 <connect gate="J" pin="SDC0_CMD" pad="111"/>
 <connect gate="J" pin="SDC0_D0" pad="108"/>
@@ -2208,12 +2208,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="GND13" gate="1" x="243.84" y="161.29"/>
 <instance part="U1" gate="C" x="241.3" y="138.43"/>
 <instance part="U1" gate="D" x="298.45" y="168.91"/>
-<instance part="U1" gate="G$4" x="304.8" y="96.52"/>
+<instance part="U1" gate="I" x="304.8" y="96.52"/>
 <instance part="U1" gate="G" x="165.1" y="160.02"/>
 <instance part="U1" gate="H" x="381" y="128.27"/>
 <instance part="U1" gate="E" x="363.22" y="185.42"/>
 <instance part="U1" gate="L" x="163.83" y="171.45"/>
-<instance part="U1" gate="K" x="40.64" y="153.67"/>
+<instance part="U1" gate="K" x="57.15" y="152.4"/>
 <instance part="U1" gate="F" x="356.87" y="114.3"/>
 <instance part="U1" gate="J" x="345.44" y="149.86"/>
 <instance part="U1" gate="N" x="337.82" y="121.92"/>
